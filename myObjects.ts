@@ -6,8 +6,6 @@ type User = {
 
 function createUser (name:string,email:string){
 
-
-
 }
 
 export{}
