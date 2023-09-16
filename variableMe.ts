@@ -1,3 +1,8 @@
 let saludo: string = 'saludos'
 
-console.log(saludo)
+alert("Hola")
+prompt(saludo)
+
+document.write(saludo)
+
+export{}
