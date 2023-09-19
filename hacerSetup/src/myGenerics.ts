@@ -16,3 +16,50 @@ interface User {
 interface Admin extends User{
     isAdmin:boolean
 }
+
+
+//Punto de rotura
+
+
+type Bird = {fly: () => void };
+type Fish = {swim: () => void };
+
+function isFish (pet: Bird | Fish): pet is Fish{
+    return (pet as Fish).swim!==undefined
+}
+
+
+function getFood(pet: Bird | Fish){
+    if(isFish(pet)){
+        pet
+        return "Fish food"
+    } else {
+        pet
+        return "Bird food"
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
